@@ -1,0 +1,61 @@
+.simulation {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align the content horizontally */
+  justify-content: center; /* Center align the content vertically */
+  text-align: center;
+  margin-top: 20px;
+}
+
+.grid {
+  display: inline-block;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ddd;
+  transition: background-color 0.3s ease; /* Smooth transition for visual effects */
+}
+
+.cell.alive {
+  background-color: black;
+}
+
+.cell.dead {
+  background-color: white;
+}
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row; /* Horizontal layout */
+  align-items: center;
+  justify-content: center; /* Center the buttons */
+  gap: 15px; /* Add space between buttons */
+}
+
+.controls button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  transition: background-color 0.2s ease;
+}
+
+.controls button:hover {
+  background-color: #ddd;
+}
+
+.controls label {
+  font-size: 1rem;
+  margin-right: 15px; /* Space between label and buttons */
+}

@@ -1,0 +1,11 @@
+/* Add hover effect to the Navbar links */
+.navbar .nav-link {
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .navbar .nav-link:hover {
+    color: white; /* Text color when hovered */
+    background-color: green; /* Background color when hovered */
+    border-radius: 5px; /* Optional: make the background rounded */
+    padding: 5px; /* Optional: add padding for better visual effect */
+  }
