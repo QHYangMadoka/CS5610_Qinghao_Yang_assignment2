@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Conway's Game of Life
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About This Project
+This project was developed individually by Qinghao Yang as part of an assignment to implement Conway's Game of Life in React. The project makes use of the following packages and libraries:
 
-## Available Scripts
+- `react` and `react-dom`: Core libraries for building the app.
+- `react-router-dom`: For implementing routing between pages.
+- `react-bootstrap` and `bootstrap`: For styling and layout components.
+- `react-scripts`: For managing the React development and build processes.
 
-In the project directory, you can run:
+The app is a simulation of Conway's Game of Life, featuring customizable grids, interactive controls, and advanced cell behaviors.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Write-Up
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Challenges Faced
+One of the biggest challenges was managing the grid's dynamic updates and ensuring efficient state management. Implementing clustered setups and "longer-lasting cells" required careful consideration of performance and logic to avoid excessive computation. Another challenge was resolving Git conflicts during collaboration with the remote repository, which consumed additional time.
 
-### `npm test`
+### Additional Features
+With more time, I would enhance the app with:
+- A more visually appealing heatmap gradient for cell states.
+- Support for importing and exporting grid configurations.
+- Real-time performance optimization for larger grid sizes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Assumptions Made
+While working on this assignment, I assumed that users would primarily interact with the app on desktop browsers. Additionally, I assumed that the clustered setup algorithm could focus on proximity-based randomness to form groups.
 
-### `npm run build`
+### Time Spent
+This assignment took approximately 20-25 hours to complete, including planning, coding, debugging, and styling.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Render App
+The deployed app can be accessed at:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**[Link to the Render App](#)** (To be added once deployment is complete)
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
