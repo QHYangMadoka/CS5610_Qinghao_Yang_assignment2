@@ -31,6 +31,53 @@ This assignment took approximately 12-14 hours to complete, including planning, 
 
 ---
 
+## Rubric
+
+### Clustered Setup - 2pts
+Conway’s Game of Life works best when cells are clustered together in interesting patterns. This requirement was met by implementing an algorithm that generates clusters of live cells based on proximity.
+
+Code snippet demonstrating the implementation:
+```javascript
+if (clustered) {
+  const clusterCenters = [];
+  const clusterCount = Math.max(Math.floor((rows * cols) * 0.05 / 5), 1);
+
+  for (let i = 0; i < clusterCount; i++) {
+    clusterCenters.push([
+      Math.floor(Math.random() * rows),
+      Math.floor(Math.random() * cols),
+    ]);
+  }
+}
+```
+
+### Longer Lasting Cells - 3pts
+A toggle was added to enable "longer-lasting cells," allowing cells set to die to potentially move one grid space to survive. This feature was implemented by checking adjacent cells during the calculation of the next generation.
+
+Code snippet demonstrating the implementation:
+```javascript
+if (longerLasting) {
+  const directions = [
+    [-1, 0], [1, 0], [0, -1], [0, 1],
+  ];
+  for (const [dx, dy] of directions) {
+    const newRow = rowIndex + dx;
+    const newCol = colIndex + dy;
+    if (
+      newRow >= 0 &&
+      newRow < rows &&
+      newCol >= 0 &&
+      newCol < cols &&
+      grid[newRow][newCol] === 1
+    ) {
+      return 1;
+    }
+  }
+}
+```
+
+---
+
 ## Render App
 The deployed app can be accessed at:
 
