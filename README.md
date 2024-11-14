@@ -27,7 +27,7 @@ With more time, I would enhance the app with:
 While working on this assignment, I assumed that users would primarily interact with the app on desktop browsers. Additionally, I assumed that the clustered setup algorithm could focus on proximity-based randomness to form groups.
 
 ### How long did this assignment take to complete?
-This assignment took approximately 20-25 hours to complete, including planning, coding, debugging, and styling.
+This assignment took approximately 12-14 hours to complete, including planning, coding, debugging, and styling.
 
 ---
 
