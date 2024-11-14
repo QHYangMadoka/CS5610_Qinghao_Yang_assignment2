@@ -81,7 +81,7 @@ if (longerLasting) {
 ## Render App
 The deployed app can be accessed at:
 
-**[Link to the Render App](#)** (To be added once deployment is complete)
+**[Conway's Game of Life](https://qhmadoka-conway-life-game.onrender.com/)**
 
 ---
 
